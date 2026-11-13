@@ -444,9 +444,9 @@ $cert = Get-ChildItem -Path Cert:\LocalMachine\My\$thumbprint
 
 #setup variabels for calls
 #variables 
-$thumbprint = "5067D109C40E5E7DAFCEB75EAFD19DADE4D651D0"
-$clientId = "5fb56167-6a33-4058-a935-8f5e0a36f7bd"
-$key = Get-Content 'C:\Scripts\ADP\aes_adp_prod.key'
+$thumbprint = "shhhh"
+$clientId = "shhhh"
+$key = Get-Content 'C:\Scripts\ADP\aes_adp_prod.key' #make this
 $pHold = Get-Content 'C:\Scripts\ADP\adp_client_secret_prod.enc' -Raw
 $pTrans = $pHold | ConvertTo-SecureString -Key $key
 $pNor = [Runtime.InteropServices.Marshal]::SecureStringToBSTR($pTrans)
